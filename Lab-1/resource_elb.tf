@@ -1,5 +1,5 @@
-resource "aws_elb" "CLB" {
-  name            = "CLB"
+resource "aws_elb" "ELB" {
+  name            = "ELB"
   subnets         = [aws_subnet.public_subnet_a.id, aws_subnet.public_subnet_b.id]
   security_groups = [aws_security_group.load_balancer_sg.id]
 
@@ -24,6 +24,6 @@ resource "aws_elb" "CLB" {
   connection_draining_timeout = 400
 
   tags = {
-    Name = "CLB"
+    Name = "ELB"
   }
 }

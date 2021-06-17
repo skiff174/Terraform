@@ -2,27 +2,27 @@ output "vpc_id" {
   value = aws_vpc.edu_vpc.id
 }
 
-output "subnet_db_layer_1_private_id" {
+output "db_private_subnet_a_id" {
   value = aws_subnet.db_private_subnet_a.id
 }
 
-output "subnet_db_layer_2_private_id" {
+output "db_private_subnet_b_id" {
   value = aws_subnet.db_private_subnet_b.id
 }
 
-output "subnet_dmz_1_public_id" {
+output "public_subnet_a_id" {
   value = aws_subnet.public_subnet_a.id
 }
 
-output "subnet_dmz_2_public_id" {
+output "public_subnet_b_id" {
   value = aws_subnet.public_subnet_b.id
 }
 
-output "subnet_app_layer_1_private_id" {
+output "app_private_subnet_a_id" {
   value = aws_subnet.app_private_subnet_a.id
 }
 
-output "subnet_app_layer_2_private_id" {
+output "app_private_subnet_b_id" {
   value = aws_subnet.app_private_subnet_b.id
 }
 

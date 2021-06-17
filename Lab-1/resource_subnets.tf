@@ -59,14 +59,3 @@ resource "aws_subnet" "app_private_subnet_b" {
   }
 }
 
-/*
-resource "aws_db_subnet_group" "rds_subnet_group" {
-  name       = "rds_subnet"
-  subnet_ids = [aws_subnet.db_layer_1_private.id, aws_subnet.db_private_subnet_b.id]
-
-  tags = {
-    Name = "rds_db_subnet_group"
-  }
-
-}
-*/
